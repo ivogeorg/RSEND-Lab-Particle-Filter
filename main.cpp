@@ -285,10 +285,6 @@ int main()
             }
             p3[i] = p[index];
         }
-        // for (int k = 0; k < n; k++) {
-        //     p[k] = p3[k];
-        //     //cout << p[k].show_pose() << endl;
-        // }
 
         //Evaluate the Error
         cout << "Step = " << t << ", Evaluation = " << evaluation(myrobot, p, n) << endl;
@@ -299,6 +295,9 @@ int main()
         //visualization(int n, Robot robot, int step, Robot p[], Robot pr[])
         visualization(n, myrobot, t, p, p3);
 
+        for (int k = 0; k < n; k++) {
+            p[k] = p3[k];
+        }
     } //End of Steps loop
 
     return 0;
