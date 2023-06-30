@@ -285,17 +285,19 @@ int main()
             }
             p3[i] = p[index];
         }
-        for (int k = 0; k < n; k++) {
-            p[k] = p3[k];
-            //cout << p[k].show_pose() << endl;
-        }
+        // for (int k = 0; k < n; k++) {
+        //     p[k] = p3[k];
+        //     //cout << p[k].show_pose() << endl;
+        // }
 
         //Evaluate the Error
         cout << "Step = " << t << ", Evaluation = " << evaluation(myrobot, p, n) << endl;
 
         //####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
 
-        //TODO: Graph the position of the robot and the particles at each step
+        //DONE: Graph the position of the robot and the particles at each step
+        //visualization(int n, Robot robot, int step, Robot p[], Robot pr[])
+        visualization(n, myrobot, step, p, p3);
 
     } //End of Steps loop
 
