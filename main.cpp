@@ -297,7 +297,7 @@ int main()
 
         //DONE: Graph the position of the robot and the particles at each step
         //visualization(int n, Robot robot, int step, Robot p[], Robot pr[])
-        visualization(n, myrobot, step, p, p3);
+        visualization(n, myrobot, t, p, p3);
 
     } //End of Steps loop
 
